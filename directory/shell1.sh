@@ -22,4 +22,9 @@ do
 cp $filename$i $reverse
 done
 cd $reverse
+dpath="$PWD"
 rm -r $filename
+sudo adduser "devops"
+sudo chown -R devops:devops $dpath
+sudo chmod 755 $dpath
+ls
